@@ -21,6 +21,6 @@ if [[ "${version}" =~ v2 ]]; then
   exit 1
 fi
 
-readonly cmd="shfmt -w $*"
+readonly cmd="shfmt -w -d $*"
 echo "[RUN] ${cmd}"
 ${cmd}
